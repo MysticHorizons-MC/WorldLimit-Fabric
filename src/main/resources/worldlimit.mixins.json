@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mystichorizonsmc.worldlimit.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "EndPortalMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "ground_portals": [
+    "edenring:portal_block",
+    "twilightforest:portal",
+    "aether:glowstone_portal"
+  ],
+  "frame_portals": [
+    "minecraft:nether_portal",
+    "deeperdarker:echo_portal"
+  ]
+}

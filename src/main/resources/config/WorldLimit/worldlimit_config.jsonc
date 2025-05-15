@@ -1,0 +1,35 @@
+{
+  // The dimension ID must be the full namespaced string (e.g. "minecraft:the_end").
+  // Each dimension entry defines the requirements for entering that world.
+
+  "minecraft:the_end": {
+    // Required PlayerEX Level (if PlayerEX is installed).
+    // If PlayerEX is NOT installed, this is ignored.
+    // Set to 0 to disable level requirement.
+    "level": 30,
+
+    // Required vanilla XP levels if PlayerEX is not present.
+    // This XP will be SUBTRACTED from the player when entering the dimension.
+    // Set to 0 to disable XP-based restriction.
+    "xp": 500
+
+    // Required items the player must be holding in their inventory to enter.
+    // You can include any item ID — vanilla or modded.
+    // WARNING: THIS IS NOT WORKING YET!
+    // To disable item requirement, set this to an empty array: []
+//    "requiredItems": ["minecraft:ender_pearl"]
+  },
+
+  "minecraft:the_nether": {
+    "level": 15,
+    "xp": 100
+//    "requiredItems": ["minecraft:flint_and_steel"]
+  },
+
+  // Example for a modded dimension (replace with real mod ID):
+  "modid:sky_realm": {
+    "level": 50,
+    "xp": 0 // No XP cost, just PlayerEX level
+//    "requiredItems": [] // No item requirement
+  }
+}

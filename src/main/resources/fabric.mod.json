@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "worldlimit",
+  "version": "${version}",
+  "name": "WorldLimit",
+  "description": "Restricts access to specific dimensions based on XP, PlayerEX level, and other conditions.",
+  "authors": ["MysticHorizonsMC"],
+  "license": "MIT",
+  "icon": "assets/worldlimit/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.mystichorizonsmc.worldlimit.WorldLimitMod"
+    ]
+  },
+  "mixins": [
+    "worldlimit.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  },
+  "suggests": {
+    "playerex": "*"
+  }
+}
